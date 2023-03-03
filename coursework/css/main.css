@@ -101,8 +101,8 @@ table th {
     70% {background-color: magenta;}
   }
 
-h1 {
-    padding: 35px;
+header {
+    padding: 5px;
     border: 35px;
-    margin: 35px;
+    margin: 25px;
 }
