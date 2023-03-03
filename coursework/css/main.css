@@ -102,15 +102,16 @@ table th {
 }
 
 header {
-    padding: 5px;
-    margin: 15px;
+    padding: 10px;
+    margin: 10px;
 }
 
 #logo {
-    width: 50px;
+    width: 70px;
     height: 50px;
+    float: left;
 }
 
 h1 {
-    float: left;
+    display: inline;
 }
