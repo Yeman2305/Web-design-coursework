@@ -100,3 +100,7 @@ table th {
 @keyframes mymove {
     70% {background-color: magenta;}
   }
+
+  h1 {
+    padding: 5px;
+  }
