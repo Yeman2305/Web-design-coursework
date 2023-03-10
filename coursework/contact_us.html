@@ -1,13 +1,15 @@
 <html>
     <head>
         <title>The RGU Dungeons and Dragons Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
         <header>
             <img id="logo" src="images/DnD-Symbol.png">
-            <h1>The Doofus Dungeoneers</h1> 
+            <h1 id="title">The Doofus Dungeoneers Society</h1> 
         </header>
 
         <nav> 
@@ -31,27 +33,37 @@
         </nav>
         
         <main>
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact Us using the below form.</legend>
-
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value=""/> 
-                        <br/>
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" value=""/>
-                        <br/>
-                        <label for="membership">Are you a Member?:</label>
-                        <input type="radio" name="membership" value="Yes">
-                        <label for="membership">Yes</label>
-                        <input type="radio" name="membership" value="No">
-                        <label for="membership">No</label>
-                        <br/>
-                        <label for="details">Details:</label>
-                        <input type="text" name="details" value=""/>
-                    </fieldset>
-                </form>
+            <div class="row">
+                <div class="column">
+                    <form>
+                        <fieldset>
+                            <legend>Contact Us using the below form.</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" value=""/> 
+                            <br/>
+                            <br/>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" value=""/>
+                            <br/>
+                            <br/>
+                            <label for="membership">Are you a Member?:</label>
+                            <input type="radio" name="membership" value="Yes">
+                            <label for="membership">Yes</label>
+                            <input type="radio" name="membership" value="No">
+                            <label for="membership">No</label>
+                            <br/>
+                            <br/>
+                            <label for="details">Details:</label>
+                            <input type="text" name="details" value=""/>
+                            <br/>
+                            <br/>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="column">
+                    <p>I hope we could be of service :)</p>
+                </div>
             </div>
         </main>
     
