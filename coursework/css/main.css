@@ -49,10 +49,19 @@ footer {
     border-radius: 10px;
 }
 
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
 nav li {
     border: 2px solid #c8c8c8;
     background-color: #ff0000;
     list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
 }
 
 nav li a {
@@ -102,17 +111,8 @@ table th {
 }
 
 header {
-    padding: 10px;
+    padding: 5px;
+    border: 35px;
+    margin: 25px;
 }
 
-#logo {
-    width: 10%%;
-    height: 5%;
-    float: left;
-    margin-right:10px;
-    display: inline;
-}
-
-h1 {
-    display: inline;
-}
