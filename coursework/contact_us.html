@@ -57,7 +57,7 @@
                             <input type="text" name="details" value=""/>
                             <br/>
                             <br/>
-                            <input type="submit" value="Submit">
+                            <button type="button" id="button" onclick="myfunction()">Submit</button>
                         </fieldset>
                     </form>
                 </div>
@@ -72,5 +72,11 @@
         <footer> 
             <p>Copyright Fraser Skene</p>
         </footer>
+        
+        <script>
+            function myfunction(){
+                document.getElementById("button").innerHTML="Form has been sent successfully!"
+            }
+        </script>
     </body>
 </html>
