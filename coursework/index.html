@@ -8,13 +8,17 @@
 
     <body>
         <header>
-            <img id="logo" src="images/DnD-Symbol.png">
+            <img id="logo" src="images/DnD-Symbol.png" alt="DnD logo">
             <h1 id="title">The Doofus Dungeoneers Society</h1>
             <div class="login">
                 <form>
-                    <fieldset>
-                        <input type="text" name="email" value=""/>
-                        <input type="text" name="password" value=""/>
+                    <fieldset alt="login section">
+                        <label style="font-size: 28px; text-decoration: underline;">Login:</label>
+                        <br/>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value="" alt="email"/>
+                        <label for="password">Password:</label>
+                        <input type="text" name="password" value="" alt="password"/>
                         <button type="button" onclick="alert('You have been logged in!')">Login</button>
                     </fieldset>
                 </form>
@@ -38,12 +42,18 @@
                 <li>
                     <a href = "contact_us.html">Contact Us</a>
                 </li>
+                <li>
+                    <a href = "video.html">Video introduction</a>
+                </li>
+                <li>
+                    <a href = "socials.html">socials</a>
+                </li>
             </ul>        
         </nav>
         
         <main> 
             <div>
-                <h3>
+                <h3 style="text-decoration: underline;">
                     Welcome to the Doofus Dungeoneers
                 </h3>
 
@@ -87,7 +97,10 @@
         </main>
     
         <aside>
-            <h3>Latest Tweets:</h3>
+            <h3>Latest news:</h3>
+            <img id="image-news" src="images/honor.jpg" alt="dnd movie: honor among thieves">
+            <h2>DND Movie Released!</h2>
+            <p>the movie, DND: honor among thieves is out in theartres now!</p>
         </aside>
 
         <footer> 
