@@ -82,12 +82,61 @@
                     </tr>
                 </table>
             </div>
+
+            <div style="padding:10px;">
+                <p>Want to recommend an event? Tell us below!</p>
+                <form name="events">
+                    <fieldset>
+                        <legend style="text-decoration: underline;">Event suggestion:</legend>
+                        <label for="event_title">Event:</label>
+                        <input type="text" name="event_title" value=""/> 
+                        <br/>
+                        <br/>
+                        <label for="event_date">Event Date:</label>
+                        <input type="date" name="event_date" value=""/>
+                        <br/>
+                        <br/>
+                        <button type="button" id="button" onclick="submit_event()">Submit Event</button>
+                    </fieldset>
+                </form>
+            </div>
         </main>
     
-        <aside> </aside>
+        <aside> 
+            <div class="row2">
+                <h2 style="text-decoration: underline;">Latest news:</h2>
+                <div class="column2">
+                    <img id="image-news" src="images/honor.jpg" alt="dnd movie: honor among thieves">
+                </div>
+                <div class="column3">
+                    <h5 style="text-decoration: underline;">DND Movie Released!</h5>
+                    <h6>the movie, DND: honor among thieves is out in theartres now!
+                        <div>main cast: Chris Pine, Michelle Rodriguez, Rege-Jean Page, Justice Smith, Sophia Lillis and Hugh Grant
+                    </h6>
+                </div>
+            </div> 
+        </aside>
 
         <footer> 
-            <p>Copyright Fraser Skene</p>
+            <p>Copyright Fraser Skene 2023</p>
         </footer>
+
+        <script>
+            function submit_event(){
+                var title = document.forms["events"]["event_title"].value;
+                var date = document.forms["events"]["event_date"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+                }
+                else {
+                    if (date.length == 0) {
+                        alert("An event must have a date!");
+                    }
+                    else {
+                        alert("Event submitted! The society will contact you soon!");
+                    }
+                }
+            }
+        </script>
     </body>
 </html>

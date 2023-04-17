@@ -11,7 +11,7 @@
             <img id="logo" src="images/DnD-Symbol.png" alt="DnD logo">
             <h1 id="title">The Doofus Dungeoneers Society</h1>
             <div class="login">
-                <form>
+                <form name="Login">
                     <fieldset alt="login section">
                         <label style="font-size: 28px; text-decoration: underline;">Login:</label>
                         <br/>
@@ -19,7 +19,7 @@
                         <input type="text" name="email" value="" alt="email"/>
                         <label for="password">Password:</label>
                         <input type="text" name="password" value="" alt="password"/>
-                        <button type="button" onclick="alert('You have been logged in!')">Login</button>
+                        <button type="button" onclick="myfunction()">Login</button>
                     </fieldset>
                 </form>
             </div>
@@ -97,14 +97,50 @@
         </main>
     
         <aside>
-            <h3>Latest news:</h3>
-            <img id="image-news" src="images/honor.jpg" alt="dnd movie: honor among thieves">
-            <h2>DND Movie Released!</h2>
-            <p>the movie, DND: honor among thieves is out in theartres now!</p>
+            <div class="row2">
+                <h2 style="text-decoration: underline;">Latest news:</h2>
+                <div class="column2">
+                    <img id="image-news" src="images/honor.jpg" alt="dnd movie: honor among thieves">
+                </div>
+                <div class="column3">
+                    <h5 style="text-decoration: underline;">DND Movie Released!</h5>
+                    <h6>the movie, DND: honor among thieves is out in theartres now!
+                        <div>main cast: Chris Pine, Michelle Rodriguez, Rege-Jean Page, Justice Smith, Sophia Lillis and Hugh Grant
+                    </h6>
+                </div>
+            </div> 
         </aside>
 
         <footer> 
-            <p>Copyright Fraser Skene</p>
+            <p>Copyright Fraser Skene 2023</p>
         </footer>
+
+        <script>
+            function myfunction(){
+                var email = document.forms["Login"]["email"].value;
+                var password = document.forms["Login"]["password"].value;
+                if (email == "") {
+                    alert("To login you must have an email!");
+                }
+                else {
+                    if (password == "") {
+                        alert("You must have a password!");
+                    }
+                    else {
+                        alert("login successful, Welcome!");
+                    }
+                }
+            }
+        </script>
+
+        <!--
+        Threat Model
+        Threat Source: External
+        Threat Agent: Human
+        Threat Intention: Intentional
+        Threat Motivation: Embarrassment of the society
+        Threat Impact: Defacement of society website, changing of images or information
+        Threat Mitigation: Login validation, 2FA in place before information can be changed
+        -->
     </body>
 </html>
