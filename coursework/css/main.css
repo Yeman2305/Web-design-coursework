@@ -96,11 +96,15 @@ nav li:hover {
 
 table {
     font-family: Georgia, Verdana;
+    font-size: 10pt;
     border-collapse: collapse;
+    width:100%;
 }
 
 table td, table th {
     border: 2px solid #f0f0f0;
+    width: 10%;
+    padding: 10px;
 }
 
 table tr:nth-child(even) {
@@ -115,7 +119,10 @@ table tr:hover {
 table th {
     background-color: #ff0000;
     color: #c8c8c8;
+    text-align: center;
 }
+
+
 
 .bday:hover {
     background: red;
@@ -182,5 +189,28 @@ header {
 }
 
 aside {
+    padding: 10px;
+}
+
+.column3 {
+    float:left;
+    padding: 10px;
+    width:45%;
+  }
+
+.column2 {
+    float:left;
+    padding: 10px;
+    width:30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.twitter-timeline {
     padding: 10px;
 }
